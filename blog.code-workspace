@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Tries"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Basic-Website"
+	}
+}
