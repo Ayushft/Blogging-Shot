@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.mainBody{
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+}
+
 body {
     margin: auto;
     background: repeating-linear-gradient(-45deg, #000 0px, #000 2px, #333 3px, #333 6px, #000 6px);
