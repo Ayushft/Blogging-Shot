@@ -16,12 +16,12 @@
 
 body {
   margin: auto;
-  /* background: repeating-linear-gradient(
+  background: repeating-linear-gradient(
     0deg,
-    #1C7C54,
-    #73E2A7
-  ); */
-  background: #0f1707;
+    #1b512d,
+    #0f1707
+  );
+  /* background: #0f1707; */
 }
 
 #wrap {
@@ -114,6 +114,18 @@ body {
   top: -48px;
   border: 39px solid;
   border-color: transparent transparent #6a6a6a transparent;
+}
+
+.contactDetails{
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content : space-between;
+}
+
+.contactDetails > *{
+  flex-grow: 1;
 }
 
 .bannerBottom:after {
@@ -224,6 +236,7 @@ body {
   flex-wrap: wrap;
   margin-top: 40px;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 table.recentPosts {
@@ -234,13 +247,14 @@ table.recentPosts {
 }
 
 tr.articleRow time {
-  padding: 1em;
+  /* border : 2px solid red; */
 }
 
 th.recentPostsCells,
 td.recentPostsCells {
   display: table-cell;
   padding-top: 0.3em;
+  
 }
 
 a {
@@ -256,4 +270,57 @@ span {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+}
+
+/* .sectionHeadings{
+  padding-bottom: 2px;
+} */
+
+.skillsSection{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillItem{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+.skillHeader{
+  font-weight: bold;
+  flex-wrap: nowrap;
+  flex-basis : 20%
+}
+
+.skillDesc{
+  font-style: italic;
+  flex-basis: 75%;
+}
+
+.skillsSection{
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+.certItem{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+.certName{
+  font-weight: bold;
+  flex-wrap: nowrap;
+  flex-basis : 75%
+}
+
+.certBadge{
+  
+  flex-basis: 20%;
 }
