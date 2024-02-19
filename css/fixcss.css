@@ -1,6 +1,6 @@
-/* * {
-    border : 2px solid red;
-} */
+* {
+  border: 2px solid red;
+}
 
 .wrap {
   text-align: center;
@@ -21,21 +21,46 @@ body {
     #1b512d,
     #0f1707
   ); */
-        background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%)  ,linear-gradient(90deg, transparent 45%, rgba(22, 64, 214,0.1) 45%, rgba(22, 64, 214,0.1) 55%, transparent 55%, transparent 20%, rgba(22, 64, 214,0.1) 20%, rgba(22, 64, 214,0.1) 30%,transparent 30%) ,linear-gradient(90deg, rgba(22, 64, 214,0.1) 9%, transparent 10%);
-        background-size: 1em 1em;
-        background-color: #ffffff;
-        opacity: 1
+  background: linear-gradient(
+      25deg,
+      #ffffff 40%,
+      transparent 41%,
+      transparent 59%,
+      #ffffff 60%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 45%,
+      rgba(22, 64, 214, 0.1) 45%,
+      rgba(22, 64, 214, 0.1) 55%,
+      transparent 55%,
+      transparent 20%,
+      rgba(22, 64, 214, 0.1) 20%,
+      rgba(22, 64, 214, 0.1) 30%,
+      transparent 30%
+    ),
+    linear-gradient(90deg, rgba(22, 64, 214, 0.1) 9%, transparent 10%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  opacity: 1;
 }
 
-.meSummary{
+.meSummary {
   font-style: italic;
 }
 
-.normalContent{
+.nameHeading {
+  margin-left: 30%;
+}
+
+.normalContent {
   font-family: arial;
   list-style: none;
   padding: 10px;
   font-size: 14px;
+  line-height: 150%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #wrap {
@@ -62,21 +87,21 @@ body {
 .banner {
   margin-left: -36px;
   border-left-width: 36px;
-  border-left-color: #00457A;
+  border-left-color: #00457a;
   border-left-style: solid;
   border-right-width: 1px;
-border-right-color: #00457A;
-border-right-style: solid;
+  border-right-color: #00457a;
+  border-right-style: solid;
 }
 
 .bannerMid {
   color: #ffffff;
-  background-color: #002E52;
+  background-color: #002e52;
   z-index: 15;
   height: 22px;
   padding: 0.5em 35px;
   border: 2px solid;
-  border-color: #002E52 transparent transparent transparent;
+  border-color: #002e52 transparent transparent transparent;
 }
 
 .bannerMid:before {
@@ -89,8 +114,8 @@ border-right-style: solid;
   top: -10px;
   border-left: 36px solid transparent;
   border-right: 25px solid transparent;
-  border-top: 42px solid #002E52;
-  border-color: #002E52 transparent transparent transparent;
+  border-top: 42px solid #002e52;
+  border-color: #002e52 transparent transparent transparent;
 }
 
 .bannerMid:after {
@@ -103,15 +128,15 @@ border-right-style: solid;
   bottom: 52px;
   border-left: 50px solid transparent;
   border-right: 35px solid transparent;
-  border-bottom: 42px solid #002E52;
+  border-bottom: 42px solid #002e52;
 }
 .bannerRight {
   border-right-width: 35px;
   border-right-style: solid;
-  border-right-color: #00457A;
+  border-right-color: #00457a;
   margin-right: -35px;
   padding-left: 35px;
-  border-left-color: #00457A;
+  border-left-color: #00457a;
   border-left-width: 1px;
   border-left-style: solid;
 }
@@ -136,15 +161,17 @@ border-right-style: solid;
   border-color: transparent transparent #6a6a6a transparent;
 }
 
-.contactDetails{
-  display : flex;
+.contactDetails {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  align-content : space-between;
+  align-content: space-between;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-.contactDetails > *{
+.contactDetails > * {
   flex-grow: 1;
 }
 
@@ -183,6 +210,7 @@ border-right-style: solid;
   list-style: none;
   padding: 10px;
   font-size: 16px;
+  font-weight: bolder;
 }
 
 .nav-list li a {
@@ -192,8 +220,8 @@ border-right-style: solid;
 }
 
 .nav-list li a:hover {
-  text-decoration: #002E52 wavy underline;
-  color: #1F1D20;
+  text-decoration: #002e52 wavy underline;
+  color: #1f1d20;
 }
 
 .midNav {
@@ -205,7 +233,7 @@ border-right-style: solid;
   align-items: center;
   justify-content: center;
   padding-left: 10px;
-  flex-grow : 2;
+  flex-grow: 2;
 }
 
 .logo {
@@ -222,15 +250,15 @@ border-right-style: solid;
   width: 60%;
   height: 35%;
   object-fit: cover;
-  border: 3px solid #1F1D20;
+  border: 3px solid #1f1d20;
   border-radius: 15px;
 }
 
 .background {
-  background: rgba(255, 255, 255, 0.7)
+  background: rgba(255, 255, 255, 0.885)
     url('../images/fabien-martin-srgUf2-Qcms-unsplashh.jpg');
   background-size: cover;
-  background-blend-mode: darken;
+  background-blend-mode: normal;
 }
 
 .background2 {
@@ -255,7 +283,7 @@ border-right-style: solid;
 
 .wrapper {
   flex-wrap: wrap;
-  margin : 40px 15px 40px 15px;
+  margin: 40px 15px 40px 15px;
 }
 
 table.recentPosts {
@@ -273,12 +301,11 @@ th.recentPostsCells,
 td.recentPostsCells {
   display: table-cell;
   padding-top: 0.3em;
-  
 }
 
 a {
   text-decoration: none;
-  color: #353238;
+  color: #222024;
 }
 
 span {
@@ -295,40 +322,45 @@ span {
   padding-bottom: 2px;
 } */
 
-.skillsSection{
+.skillsSection {
   font-size: 14px;
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.skillItem{
+.skillItem {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
   grid-template-columns: 1fr 1fr auto;
+  align-items: center;
 }
 
-.skillHeader{
+.skillHeader {
   font-weight: bold;
   flex-wrap: nowrap;
-  flex-basis : 20%
+  flex-basis: 20%;
+  text-align: left;
 }
 
-.skillDesc{
+.skillDesc {
   font-style: italic;
   flex-basis: 75%;
+  line-height: 150%;
 }
 
-.skillsSection{
+.skillsSection {
   display: flex;
   flex-direction: column;
   column-gap: 10px;
   grid-template-columns: 1fr 1fr auto;
   font-family: montserrat, sans-serif;
-  
 }
 
-.certItem{
+.certItem {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
@@ -336,34 +368,34 @@ span {
   font-family: montserrat, sans-serif;
 }
 
-.certName{
+.certName {
   font-weight: bold;
   font-style: oblique;
   font-size: 14px;
   flex-wrap: nowrap;
-  flex-basis : 75%
+  flex-basis: 75%;
 }
 
-.certBadge{
+.certBadge {
   flex-basis: 20%;
   font-size: 14px;
   font-style: italic;
 }
 
-.badges{
+.badges {
   display: flex;
   flex-direction: row;
   column-gap: 15px;
   justify-content: center;
-  padding: 0 0 10px 0;
+  align-items: center;
 }
 
-.badgePic{
+.badgePic {
   aspect-ratio: 1;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
 }
 
-.eachSection{
-  padding : 20px 0 20px 0;
+.eachSection {
+  padding: 20px 0 20px 0;
 }
