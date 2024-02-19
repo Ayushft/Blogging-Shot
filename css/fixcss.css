@@ -64,6 +64,9 @@ body {
   border-left-width: 36px;
   border-left-color: #00457A;
   border-left-style: solid;
+  border-right-width: 1px;
+border-right-color: #00457A;
+border-right-style: solid;
 }
 
 .bannerMid {
@@ -108,6 +111,9 @@ body {
   border-right-color: #00457A;
   margin-right: -35px;
   padding-left: 35px;
+  border-left-color: #00457A;
+  border-left-width: 1px;
+  border-left-style: solid;
 }
 
 .bannerBottom {
