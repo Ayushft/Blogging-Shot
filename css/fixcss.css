@@ -16,12 +16,26 @@
 
 body {
   margin: auto;
-  background: repeating-linear-gradient(
+  /* background: repeating-linear-gradient(
     0deg,
     #1b512d,
     #0f1707
-  );
-  /* background: #0f1707; */
+  ); */
+        background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%)  ,linear-gradient(90deg, transparent 45%, rgba(22, 64, 214,0.1) 45%, rgba(22, 64, 214,0.1) 55%, transparent 55%, transparent 20%, rgba(22, 64, 214,0.1) 20%, rgba(22, 64, 214,0.1) 30%,transparent 30%) ,linear-gradient(90deg, rgba(22, 64, 214,0.1) 9%, transparent 10%);
+        background-size: 1em 1em;
+        background-color: #ffffff;
+        opacity: 1
+}
+
+.meSummary{
+  font-style: italic;
+}
+
+.normalContent{
+  font-family: arial;
+  list-style: none;
+  padding: 10px;
+  font-size: 14px;
 }
 
 #wrap {
@@ -37,7 +51,7 @@ body {
 #wrap > footer {
   padding: 1em 2em;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   bottom: 0;
   border-bottom-left-radius: 10px;
@@ -48,18 +62,18 @@ body {
 .banner {
   margin-left: -36px;
   border-left-width: 36px;
-  border-left-color: #b1cf5f;
+  border-left-color: #00457A;
   border-left-style: solid;
 }
 
 .bannerMid {
-  color: #fff;
-  background-color: #1b512d;
+  color: #ffffff;
+  background-color: #002E52;
   z-index: 15;
   height: 22px;
   padding: 0.5em 35px;
   border: 2px solid;
-  border-color: #1b512d transparent transparent transparent;
+  border-color: #002E52 transparent transparent transparent;
 }
 
 .bannerMid:before {
@@ -72,8 +86,8 @@ body {
   top: -10px;
   border-left: 36px solid transparent;
   border-right: 25px solid transparent;
-  border-top: 42px solid #1b512d;
-  border-color: #1b512d transparent transparent transparent;
+  border-top: 42px solid #002E52;
+  border-color: #002E52 transparent transparent transparent;
 }
 
 .bannerMid:after {
@@ -86,18 +100,18 @@ body {
   bottom: 52px;
   border-left: 50px solid transparent;
   border-right: 35px solid transparent;
-  border-bottom: 42px solid #1b512d;
+  border-bottom: 42px solid #002E52;
 }
 .bannerRight {
   border-right-width: 35px;
   border-right-style: solid;
-  border-right-color: #b1cf5f;
+  border-right-color: #00457A;
   margin-right: -35px;
   padding-left: 35px;
 }
 
 .bannerBottom {
-  color: #fff;
+  color: #ffffff;
   background-color: #6a6a6a;
   z-index: 1500;
   height: 22px;
@@ -143,6 +157,8 @@ body {
 .navbar {
   display: flex;
   width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .nav-list {
@@ -165,24 +181,25 @@ body {
 
 .nav-list li a {
   text-decoration: none;
-  color: #def4c6;
+  color: #29262b;
   float: right;
 }
 
 .nav-list li a:hover {
-  text-decoration: none;
-  color: #b1cf5f;
+  text-decoration: #002E52 wavy underline;
+  color: #1F1D20;
 }
 
 .midNav {
   width: 50%;
-  color: #def4c6;
+  color: #29262b;
   font-size: 40px;
   font-family: 'cambria';
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 10px;
+  flex-grow : 2;
 }
 
 .logo {
@@ -199,22 +216,19 @@ body {
   width: 60%;
   height: 35%;
   object-fit: cover;
-  border: 3px solid #def4c6;
+  border: 3px solid #1F1D20;
   border-radius: 15px;
 }
 
 .background {
-  background: rgba(0, 0, 0, 0.7)
+  background: rgba(255, 255, 255, 0.7)
     url('../images/fabien-martin-srgUf2-Qcms-unsplashh.jpg');
   background-size: cover;
   background-blend-mode: darken;
 }
 
 .background2 {
-  background: #def4c6;
-  background-size: cover;
-  background-blend-mode: lighten;
-  color: #1b512d;
+  background: #ffffff;
 }
 
 .firstSection {
@@ -224,7 +238,7 @@ body {
 }
 
 .sectionHeaders {
-  color: #1b512d;
+  color: #141414;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   line-height: 1.15em;
@@ -258,7 +272,7 @@ td.recentPostsCells {
 
 a {
   text-decoration: none;
-  color: #1b512d;
+  color: #353238;
 }
 
 span {
