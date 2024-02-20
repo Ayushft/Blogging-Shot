@@ -6,11 +6,14 @@
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+  height: 100%;
+  max-height: 100%;
 }
 
 @media (max-width: 8.5in) {
 	.wrap {
 		grid-template-columns: 1fr 5% [start] 5% 80% 5% [end] 5% 1fr;
+    max-height: 100%;
 	}
 }
 
@@ -31,12 +34,12 @@ body {
 		linear-gradient(
 			90deg,
 			transparent 45%,
-			rgba(22, 64, 214, 0.1) 45%,
-			rgba(22, 64, 214, 0.1) 55%,
+			rgba(22, 64, 214, 0.3) 45%,
+			rgba(22, 64, 214, 0.3) 55%,
 			transparent 55%,
 			transparent 20%,
-			rgba(22, 64, 214, 0.1) 20%,
-			rgba(22, 64, 214, 0.1) 30%,
+			rgba(22, 64, 214, 0.3) 20%,
+			rgba(22, 64, 214, 0.3) 30%,
 			transparent 30%
 		),
 		linear-gradient(90deg, rgba(22, 64, 214, 0.1) 9%, transparent 10%);
@@ -221,7 +224,8 @@ body {
 
 .nav-list li a:hover {
 	text-decoration: #002e52 wavy underline;
-	color: #1f1d20;
+	color: #2d2a2e;
+  letter-spacing: 1.5px;
 }
 
 .midNav {
@@ -366,6 +370,8 @@ span {
 	column-gap: 10px;
 	grid-template-columns: 1fr 1fr auto;
 	font-family: montserrat, sans-serif;
+  padding-left:10px;
+  padding-right: 10px;
 }
 
 .certName {
@@ -398,4 +404,35 @@ span {
 
 .eachSection {
 	padding: 20px 0 20px 0;
+}
+
+.experienceSection{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.expHeader{
+  color: #141414;
+	font-family: montserrat, sans-serif;
+	font-weight: bolder;
+	line-height: 150%;
+	padding-left: 10px;
+  padding-right: 10px;
+}
+
+.expDate{
+  font-family: arial;
+	font-size: 14px;
+	line-height: 150%;
+	padding-left: 10px;
+	padding-right: 10px;
+  flex-grow: 2;
+  text-align: right;
+  font-style: italic;
+}
+.certifications{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
