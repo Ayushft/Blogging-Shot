@@ -58,11 +58,11 @@ body {
 
 .normalContent {
 	font-family: arial;
-	list-style: none;
+	list-style:square;
 	padding: 10px;
 	font-size: 14px;
 	line-height: 150%;
-	padding-left: 10px;
+	padding-left: 15px;
 	padding-right: 10px;
 }
 
@@ -262,7 +262,7 @@ body {
 	background: rgba(255, 255, 255, 0.885)
 		url('../images/fabien-martin-srgUf2-Qcms-unsplashh.jpg');
 	background-size: cover;
-	background-blend-mode: normal;
+	background-blend-mode:normal;
 }
 
 .background2 {
