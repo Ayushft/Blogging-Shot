@@ -50,21 +50,39 @@
 	border: 0px solid; */
 	border-color: #002e52 transparent transparent transparent;
   }
-  
-  nav > .bannerMid:before {
+
+  #bannerMidPhone:before important{
+	display: block;
+	width: 0;
+	height: 0;
+	position: relative;
+  }
+  #bannerMidPhone:after{
 	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 0px solid #002e52;
+  }
+
+  .bannerMid:before important{
 	display: block;
 	width: 0;
 	height: 0;
 	position: relative;
   }
   
-  nav > .bannerMid:after {
+  .bannerMid:after important{
 	content: "";
 	display: block;
 	width: 0px;
 	height: 0px;
-	position: relative;
+	position: absolute;
 	right: 0px;
 	bottom: 0px;
 	border-left: 0px solid transparent;
