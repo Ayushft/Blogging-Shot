@@ -11,9 +11,10 @@
 } */
 
 @media screen and (max-width : 700px){
-	body > .mainBody{
-	}
-	
+	body > .nameHeading {
+		margin: auto;
+		font-size: 20px;
+	  }
 	body > #wrap{
 	width : 100%;
 	max-width : 100%;
